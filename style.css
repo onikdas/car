@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background:#eaf5ff ;
+   position: relative;
+
+}
+#navbar{
+    width: 90%;
+    height: 15%;
+    clip-path: polygon(100% 0,95% 50%,50% 100%,5% 50%,0 0);
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background: #fb0320;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul,ol{
+   display: flex; 
+   flex-direction: row;
+   list-style: none;
+   padding: 25px 0px;
+}
+ul{
+   position: absolute;
+   left: 5%; 
+}
+ol{
+   position: absolute;
+   right: 5%; 
+}
+li{
+    margin: 0 60px;
+    font-size: 26px;
+}
+li a{
+    text-decoration: none;
+    text-transform: initial;
+    color: #e2e2e2;
+    transition: 0.5s;
+}
+li a:hover{
+transform:scale(1.1) ;
+color: #000;
+
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 50px);
+}
+#logo img{
+    height: 120px;
+    background-color:#d40219 solid transparent  ;
+}
+#logo:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#sideimg{
+  width: 500px;
+  height: 500px;
+   position: absolute;
+   top: 25%;
+   right: 20%;
+   z-index: 999;
+   display: grid;
+   place-items: center;
+   cursor: pointer;    
+}
+#sideimg img{
+    height: 500px;
+}
+#sideimg:hover img{
+animation: animate 2s linear;
+}
+@keyframes animate {
+0%
+{
+transform: scale(1);
+} 
+70%
+{
+transform: scale(0.60);
+}
+85%
+{
+    transform: scale(0.90);
+}
+95%
+{
+    transform: scale(1.10);
+}
+100%
+{
+    transform: scale(1);
+}
+}
+#containerSection{
+   height: 400px;
+   width: 750px;
+   position: absolute;
+   left: 5%;
+   top: calc(50% - 200px);
+}
+#containerSection span{
+    font-size: 150px;
+color: #b0a4a5;
+font-weight: 900;
+}
+#containerSection h2{
+font-size: 150px;
+color: #d40219;
+font-weight: 900;
+}
+#containerSection p{
+padding: 0 0 0 20px;
+font-size: 24px;
+}
+#containerSection button{
+    height: 70px;
+    width: 200px;
+    border: 1px solid #d40219;
+    border-radius: 10px;
+    box-shadow: 1px solid #333;
+    font-size: 34px;
+    padding: 8px;
+    background-color: #d40219;
+    color: #eaf5ff;
+    cursor: pointer;
+    font-weight: 900;
+    
+    margin-top: 30px ;
+    margin-left: 30px;
+
+}
+#containerSection button:hover{
+    animation: animate 1s linear;
+}
